@@ -1,0 +1,22 @@
+.achieved:hover{
+  transform: translateY(-5px);
+}
+
+.achieved{
+  opacity: 1;
+}
+
+.achievement-img{
+  opacity: 0.8;
+  filter: grayscale(1.0);
+}
+
+.achieved .achievement-img{
+  opacity: 1;
+  filter: none;
+}
+
+.achievement-requirement{
+  margin-top: 10px;
+  opacity: 0.6;
+}

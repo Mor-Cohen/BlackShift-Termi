@@ -1,0 +1,87 @@
+.memory-cards-grid{
+    margin: 10px;
+    display: grid;
+    align-items: stretch;
+    justify-content: stretch;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+}
+
+.memory-card{
+    background-color: transparent;
+    width: 100%;
+    /*perspective: 1000px;*/
+    border-radius: .25rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    transform-style: preserve-3d;
+    /*transition: 150ms;*/
+}
+
+
+/*.memory-card-inner{*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    text-align: center;*/
+/*    transition: transform 0.5s;*/
+/*    transform-style: preserve-3d;*/
+/*    border-radius: .25rem;*/
+/*}*/
+
+.disabled-memory-card{
+    pointer-events:none;
+}
+
+.memory-card .back,
+.memory-card .front{
+    border-radius: .25rem;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+
+.memory-card .back{
+    color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transform-style: preserve-3d;
+    /*transition: 150ms;*/
+    cursor: pointer;
+}
+
+.memory-card .front{
+    pointer-events:none;
+    background-color: white;
+}
+
+.memory-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.short-definition-type{
+    /*background: #5b3e8f;*/
+    background: -webkit-linear-gradient(200deg, #5b3e8f 0%, #140056 100%);
+    background: linear-gradient(200deg, #5b3e8f 0%, #140056 100%);
+}
+
+.concept-name-type{
+    background: #ffbb29;
+    background: -webkit-linear-gradient(200deg, #ffbb29 0%, #cd5703 100%);
+    background: linear-gradient(200deg, #ffbb29 0%, #cd5703 100%);
+}
+
+.correct{
+    background-color: #55cc3b !important;
+}
+
+.incorrect{
+    background-color: red !important;
+}
+
+.icon-center{
+  margin-left:25%
+}
